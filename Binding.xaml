@@ -14,14 +14,13 @@
             <Label Text="Título" VerticalOptions="Start" />
             <Entry
                 x:Name="EntryTask"
-                Placeholder="Ingrese el nombre de la tarea"
-                Text="{Binding NuevaTarea.TaskName}" />
+                BindingContext="{Binding NuevaTarea.TaskName}"
+                Placeholder="Ingrese el nombre de la tarea" />
             <Label Text="Estado de la tarea" VerticalOptions="Start" />
             <Entry
                 x:Name="EntryStatus"
                 BindingContext="{Binding NuevaTarea.Status}"
-                Placeholder="Ingrese el estado de la tarea"
-                Text="{Binding NuevaTarea.Status}" />
+                Placeholder="Ingrese el estado de la tarea" />
             <StackLayout
                 Margin="20"
                 Padding="20"
